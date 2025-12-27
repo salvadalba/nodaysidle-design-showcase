@@ -1,0 +1,38 @@
+{
+    "name": "NODAYSIDLE",
+    "bio": "We are 2 people, 1 entity. NODAYSIDLE is a creative technology studio specializing in AI-powered applications, generative art, and innovative user interfaces. We believe in building tools that are as beautiful as they are functional—where every pixel serves a purpose and every interaction tells a story.",
+    "skills": [
+        "AI/ML Integration",
+        "React & TypeScript",
+        "Rust & WebAssembly",
+        "Generative Art",
+        "Design Systems",
+        "Real-Time Systems",
+        "Full-Stack Development",
+        "UI/UX Design"
+    ],
+    "experience": [
+        {
+            "title": "Origin Zero",
+            "description": "Lead development of AI-powered PRD generator",
+            "period": "2024"
+        },
+        {
+            "title": "Creative Technology Projects",
+            "description": "Built portfolio of innovative web experiences",
+            "period": "2023-2024"
+        },
+        {
+            "title": "Open Source Contributions",
+            "description": "Active contributor to generative art community",
+            "period": "Ongoing"
+        }
+    ],
+    "social_links": {
+        "email": "info@nodaysidle.com",
+        "github": "https://github.com/salvadalba",
+        "twitter": "https://twitter.com/kaly_ndi",
+        "linkedin": null,
+        "dribbble": null
+    }
+}

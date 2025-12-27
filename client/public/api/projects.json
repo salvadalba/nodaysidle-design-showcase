@@ -1,0 +1,127 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "title": "Cyber Brutalist to Art Deco",
+            "description": "A dynamic visual journey from raw, utilitarian cyber brutalism to refined Art Deco elegance through scroll-based transformations.",
+            "thumbnail_url": "/assets/cyberbrutalist-thumb.png",
+            "images": [
+                "/assets/cyberbrutalist-1.png",
+                "/assets/cyberbrutalist-2.png"
+            ],
+            "tags": [
+                "React",
+                "Vite",
+                "Tailwind",
+                "GSAP",
+                "Animation"
+            ],
+            "content": "This project explores the spectrum of digital aesthetics. As users scroll, the interface transforms from chaotic brutalist layouts with exposed grids and glitch effects into sophisticated Art Deco patterns with golden geometries and ornate details.",
+            "featured": true,
+            "github_url": "https://github.com/salvadalba/nodaysidle-cyberbrutalist-to-art-deco",
+            "live_url": null
+        },
+        {
+            "id": "2",
+            "title": "AeroGlass",
+            "description": "A premium generative art showcase featuring algorithmic masterpieces displayed in a stunning glassmorphism gallery.",
+            "thumbnail_url": "/assets/aeroglass-thumb.png",
+            "images": [
+                "/assets/aeroglass-1.png",
+                "/assets/aeroglass-2.png"
+            ],
+            "tags": [
+                "React",
+                "Canvas API",
+                "Generative Art",
+                "Glassmorphism"
+            ],
+            "content": "AeroGlass transforms mathematical algorithms into visual art. Each piece is generated on-the-fly using custom canvas algorithms, ensuring every viewing is unique.",
+            "featured": true,
+            "github_url": "https://github.com/salvadalba/nodaysidle-Aeroglass-",
+            "live_url": null
+        },
+        {
+            "id": "3",
+            "title": "Origin Zero",
+            "description": "AI-powered documentation generator that transforms two sentences into complete project specifications.",
+            "thumbnail_url": "/assets/originzero-thumb.png",
+            "images": [
+                "/assets/originzero-1.png",
+                "/assets/originzero-2.png"
+            ],
+            "tags": [
+                "React",
+                "TypeScript",
+                "AI",
+                "Cinematic UI"
+            ],
+            "content": "Origin Zero is not just a tool—it's an experience. Built with a Cinematic Zen interface featuring deep dark modes, holographic accents, and fluid micro-animations.",
+            "featured": true,
+            "github_url": "https://github.com/salvadalba/nodaysidle-originzero",
+            "live_url": "https://0riginzero-8tngzswx9-nodaysidle.vercel.app/"
+        },
+        {
+            "id": "4",
+            "title": "Ironclad OS",
+            "description": "A WebAssembly-powered documentation compiler with an industrial minimal design aesthetic.",
+            "thumbnail_url": "/assets/ironclados-thumb.png",
+            "images": [
+                "/assets/ironclados-1.png",
+                "/assets/ironclados-2.png"
+            ],
+            "tags": [
+                "Rust",
+                "WebAssembly",
+                "React",
+                "TypeScript"
+            ],
+            "content": "Ironclad OS brings deterministic, zero-latency document generation to the browser using Rust and WebAssembly.",
+            "featured": false,
+            "github_url": "https://github.com/salvadalba/nodaysidle-ironclados",
+            "live_url": null
+        },
+        {
+            "id": "5",
+            "title": "Mnemosync",
+            "description": "An AI-guided platform for preserving family memories through intelligent interviews and beautiful visualizations.",
+            "thumbnail_url": "/assets/mnemosync-thumb.png",
+            "images": [
+                "/assets/mnemosync-1.png",
+                "/assets/mnemosync-2.png"
+            ],
+            "tags": [
+                "GPT-4",
+                "Whisper",
+                "DALL-E",
+                "React",
+                "Memory"
+            ],
+            "content": "Mnemosync uses AI to conduct dynamic interviews, generating context-aware follow-up questions.",
+            "featured": false,
+            "github_url": "https://github.com/salvadalba/nodaysidle-Mnemosync",
+            "live_url": null
+        },
+        {
+            "id": "6",
+            "title": "GridHive",
+            "description": "A peer-to-peer energy trading platform connecting solar prosumers through automated micro-auctions.",
+            "thumbnail_url": "/assets/gridhive-thumb.png",
+            "images": [
+                "/assets/gridhive-1.png",
+                "/assets/gridhive-2.png"
+            ],
+            "tags": [
+                "Rust",
+                "PostgreSQL",
+                "WebSocket",
+                "React",
+                "Energy"
+            ],
+            "content": "GridHive enables homeowners with solar panels to sell excess energy directly to neighbors.",
+            "featured": false,
+            "github_url": "https://github.com/salvadalba/nodaysidle-gridhive",
+            "live_url": null
+        }
+    ]
+}

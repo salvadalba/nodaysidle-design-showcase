@@ -1,4 +1,5 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+// Use static JSON files for deployment (no serverless functions needed)
+const API_BASE_URL = '/api';
 
 // In-memory caches
 let projectsCache = null;
@@ -12,7 +13,8 @@ let aboutCache = null;
  * @returns {Promise<any>} Response data
  */
 async function apiRequest(endpoint, options = {}) {
-  const url = `${API_BASE_URL}${endpoint}`;
+  // For static deployment, append .json to endpoints
+  const url = `${API_BASE_URL}${endpoint}.json`;
 
   const config = {
     ...options,
