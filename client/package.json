@@ -4,7 +4,7 @@
   "description": "Frontend for Chameleon OS",
   "type": "module",
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "scripts": {
     "dev": "vite",
