@@ -51,33 +51,34 @@ app.use(notFoundHandler);
 // Error handler (must be last)
 app.use(errorHandler);
 
-// Initialize vibe cache
-async function init() {
+// Initialize vibe cache and start server
+async function start() {
   try {
+    // Initialize vibe cache
     await vibeCache.init();
     logger.info('Vibe cache initialized successfully');
-  } catch (error) {
-    logger.error('Failed to initialize vibe cache', { error: error.message });
-  }
-}
 
-// Start server function
-function startServer() {
-  init().then(() => {
+    // Start server
     app.listen(PORT, () => {
       logger.info(`Server running on port ${PORT}`);
       logger.info(`Environment: ${process.env.NODE_ENV || 'development'}`);
       logger.info(`CORS origin: ${process.env.FRONTEND_URL || 'http://localhost:5173'}`);
     });
-  }).catch(error => {
+  } catch (error) {
     logger.error('Failed to start server', { error: error.message });
     process.exit(1);
-  });
+  }
 }
 
-// Only start server if run directly (not imported)
-if (process.argv[1] === new URL(import.meta.url).pathname) {
-  startServer();
-}
+// Handle graceful shutdown
+process.on('SIGTERM', () => {
+  logger.info('SIGTERM received, shutting down gracefully');
+  process.exit(0);
+});
 
-export default app;
+process.on('SIGINT', () => {
+  logger.info('SIGINT received, shutting down gracefully');
+  process.exit(0);
+});
+
+start();

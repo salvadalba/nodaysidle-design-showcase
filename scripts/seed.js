@@ -118,8 +118,8 @@ const projects = [
   {
     title: 'Cyber Brutalist to Art Deco',
     description: 'A dynamic visual journey from raw, utilitarian cyber brutalism to refined Art Deco elegance through scroll-based transformations.',
-    thumbnail_url: '/api/assets/cyberbrutalist-thumb.png',
-    images: ['/api/assets/cyberbrutalist-1.png', '/api/assets/cyberbrutalist-2.png'],
+    thumbnail_url: '/assets/cyberbrutalist-thumb.png',
+    images: ['/assets/cyberbrutalist-1.png', '/assets/cyberbrutalist-2.png'],
     tags: ['React', 'Vite', 'Tailwind', 'GSAP', 'Animation'],
     content: 'This project explores the spectrum of digital aesthetics. As users scroll, the interface transforms from chaotic brutalist layouts with exposed grids and glitch effects into sophisticated Art Deco patterns with golden geometries and ornate details. Features include micro-animations, interactive shop section, and generative art gallery.',
     featured: true,
