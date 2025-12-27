@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NODAYSIDLE - 2 people, 1 entity. We build AI-powered tools, generative art, and innovative interfaces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>NODAYSIDLE - Creative Technology Studio</title>
+  <style>
+    /* CSS custom properties - initial values */
+    :root {
+      --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-size-h1: 3rem;
+      --font-size-h2: 2.5rem;
+      --font-size-h3: 2rem;
+      --font-size-body: 1rem;
+      --font-size-small: 0.875rem;
+
+      --color-primary: #7c3aed;
+      --color-secondary: #a855f7;
+      --color-bg: #faf5ff;
+      --color-text: #581c87;
+      --color-accent: #c026d3;
+
+      --spacing-xs: 0.75rem;
+      --spacing-sm: 1.25rem;
+      --spacing-md: 2rem;
+      --spacing-lg: 3rem;
+      --spacing-xl: 4.5rem;
+
+      --border-radius: 0.75rem;
+
+      /* Transition properties for smooth theme changes */
+      transition-property: color, background-color, border-color, border-radius, font-size;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      font-size: var(--font-size-body);
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* GPU-accelerated animations */
+    .gpu-accelerated {
+      transform: translateZ(0);
+      will-change: transform, opacity;
+    }
+
+    /* Smooth transitions for all theme-related properties */
+    *, *::before, *::after {
+      transition: color 0.3s ease,
+                  background-color 0.3s ease,
+                  border-color 0.3s ease,
+                  border-radius 0.3s ease;
+    }
+
+    /* Focus visible for keyboard navigation */
+    :focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "chameleon-os-server",
+  "version": "1.0.0",
+  "description": "Backend API for Chameleon OS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development node --watch index.js",
+    "start": "NODE_ENV=production node index.js",
+    "build": "echo 'No build step required'",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "pg": "^8.11.3",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "supertest": "^6.3.3",
+    "vitest": "^1.1.0"
+  }
+}
