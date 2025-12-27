@@ -72,23 +72,18 @@ export async function fetchProjects() {
 
 /**
  * Fetch single project by ID
- * @param {string} id - Project UUID
+ * @param {string} id - Project ID
  * @returns {Promise<Project|null>} Project object or null if not found
  */
 export async function fetchProjectById(id) {
-  if (!isValidUUID(id)) {
-    console.warn('Invalid UUID format:', id);
-    return null;
-  }
-
   try {
-    const data = await apiRequest(`/projects/${id}`);
-    return data;
+    // For static deployment, fetch all projects and find by ID
+    const projects = await fetchProjects();
+    const project = projects.find(p => p.id === id || p.id === String(id));
+    return project || null;
   } catch (error) {
-    if (error.message.includes('404')) {
-      return null;
-    }
-    throw error;
+    console.error('Failed to fetch project:', error);
+    return null;
   }
 }
 
